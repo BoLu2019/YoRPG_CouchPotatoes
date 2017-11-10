@@ -5,7 +5,7 @@ HW28 -- Ye Olde Role Playing Games
 2017-11-09
 */
 
-public class Protagonist {
+public class Protagonist{
 
     //attributes for our character
     private String name;
