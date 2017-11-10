@@ -1,7 +1,9 @@
-//Larry Wong, Bo Hui Lu, Richard Wong (Team CouchPotatoes)
-//APCS1 pd8
-//HW28 -- Ye Olde Role Playing Game
-//2017-11-08
+/*
+  Bo Hui Lu, Larry Wong, Richard Wong (Team CouchPotatoes)
+  APCS1 pd08
+  HW30 -- Ye Olde Role Playing Games, Improved
+  2017-11-10
+*/
 
 public class Monster extends Character{
 
