@@ -3,7 +3,7 @@
 //HW28 -- Ye Olde Role Playing Game
 //2017-11-08
 
-public class Monster extends Character{
+public class Monster{
 
     //attributes for out monster
     //private String name;
