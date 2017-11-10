@@ -1,4 +1,4 @@
-//Bo Hui Lu, Larry Wong, Richard Wong (Team CouchPotatoes)
+//Larry Wong, Bo Hui Lu, Richard Wong (Team CouchPotatoes)
 //APCS1 pd8
 //HW28 -- Ye Olde Role Playing Game
 //2017-11-08
