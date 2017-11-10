@@ -5,7 +5,7 @@
   2017-11-09
 */
 
-public class Protagonist{
+public class Protagonist extends Character{
 
     //attributes for our character
     private String name;
