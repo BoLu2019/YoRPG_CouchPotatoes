@@ -11,3 +11,6 @@
 # Monsters:
    # 1. *Slime*: This subclass of Monster that has low attack and health. It is a fairly waek monster. However, in return,                       defense is EXTREMELY high because who can destroy a fluid with a physical attacks? This class is intended to waste the player's time in order to keep players glued to their screens.
    # 2. *Goblin*: This monster has lots of armor from stealing from the heroes of the past. Not to mention it's skin has great durability, hence the higher health than others.
+   
+# YoRPG
+# Without this, we would not be able to play our amazing creation.
