@@ -1,8 +1,8 @@
 public class Character {
-    private int health;
-    private int strength;
-    private int defense;
-    private double attRating;
+    protected int health;
+    protected int strength;
+    protected int defense;
+    protected double attRating;
     
     public boolean isAlive(){
 	return (health > 0);//If health is zero, character is dead
