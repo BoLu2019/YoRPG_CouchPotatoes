@@ -5,7 +5,7 @@
   2017-11-09
 */
 
-public class Protagonist extends Character{
+public abstract class Protagonist extends Character{
 
     protected String name = "YouForgotYourself";
 
@@ -37,16 +37,16 @@ public class Protagonist extends Character{
     }
 
     //prepares for special attack. Lowered defense for a 100% boost in attack
-    public void specialize(){
-	defense -= 10;
-	attRating *= 1.2;     
-    }
+    public abstract void specialize();
+    
+    
 
     //resets attRating and defense to normal
-    public void normalize(){
-	defense = 40;
-	attRating = 0.4	;
-    }
+    public abstract void normalize();
+
+    
+
+    public abstract String about();
 
     
 
