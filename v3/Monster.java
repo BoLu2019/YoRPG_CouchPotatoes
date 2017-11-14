@@ -22,20 +22,6 @@ public class Monster extends Character{
 
     }//end constructor
 
-    //checks of health is greater than 0
-    public boolean isAlive(){
-	return health > 0;
-    }//end isAlive()
-
-    //accessor to return current defense of character
-    public int getDefense(){
-	return defense;       
-    }
-
-    //mutator to lower health based of given dmg taken
-    public void lowerHP(int dmg){
-	health -= dmg;
-    }
 
     //returns damage thats going to be dealt
     public int attack(Protagonist x){
