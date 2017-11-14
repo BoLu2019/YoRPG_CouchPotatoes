@@ -7,39 +7,23 @@
 
 public class Protagonist extends Character{
 
-    private String _name = "YouForgotYourself";
-    
+    protected String name = "YouForgotYourself";
+
     public Protagonist(){
 	health = 125;
 	strength = 100;
 	defense = 40;
 	attRating = 0.4;
 
-    }//ends constructor1
-    public Protagonist( String charName ) {
-	this();
-	name = charName;
-    }
+    }//ends constructor
 
-    public boolean isAlive(){
-	return (health > 0);//If health is zero, character is dead
-    }
-
-    //accessor to return current defense of character
-    public int getDefense(){
-	return defense;       
-    }
-
-    //accessor to return character's name
-    public String getName(){
+    
+    // accessor
+    public String getName()
+    {
 	return name;
     }
-
-    //mutator to lower health based of given dmg taken
-    public void lowerHP(int dmg){
-	health -= dmg;
-    }
-
+    
     //returns damage thats going to be dealt
     public int attack(Monster x){
 	int damage = 0;
