@@ -1,7 +1,7 @@
 # YoRPG_CouchPotatoes
 
 ## Characters
-# These three characters all subclasses of Character.
+# These three characters are all subclasses of Character.
 
 # Protagonists:
    # 1. *Warrior*: This subclass of Protagonist that gives the user a high health pool and defense. However, in return, the                         class's attack damage is lower than other classes. This class is great for long runs and is generally for                      less experienced players.
