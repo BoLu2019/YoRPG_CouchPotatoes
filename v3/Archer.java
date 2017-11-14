@@ -18,7 +18,7 @@ public class Archer extends Protagonist{
 
     //about this class
     public static String about(){
-	return "This subclass of Protagonist, Archer, is one with slightly above average attack and defense, good for ballanced gameplay.";
+	return "This subclass of Protagonist, Archer, is one with slightly above average attack and defense, good for balanced gameplay.";
 
     }//end about()
 
