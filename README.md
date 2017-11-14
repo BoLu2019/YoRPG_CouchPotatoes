@@ -4,7 +4,7 @@
 # These three characters are all subclasses of Character.
 
 # Protagonists:
-   # 1. *Warrior*: This subclass of Protagonist that gives the user a high health pool and defense. However, in return, the                         class's attack damage is lower than other classes. This class is great for long runs and is generally for                      less experienced players.
+   # 1. *Warrior*: This is a subclass of Protagonist that gives the user a high health pool and defense. However, in return, the                         class's attack damage is lower than other classes. This class is great for long runs and is generally for                      less experienced players.
    # 2. *Wizard*: Wizard class has all of the default stats, but is great with magic, so it has twice the attRating of a normal character.
    # 3. *Archer*: Archer class has slight higher than average of each stat; the balanced player.
 
