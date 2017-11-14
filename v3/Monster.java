@@ -5,12 +5,13 @@
 
 public class Monster extends Character{
 
+    /*
     //attributes for out monster
-    //private String name;
     private int health;
     private int strength;
     private int defense;
     private double attRating;
+    */
 
     //initalizes all values
     public Monster(){

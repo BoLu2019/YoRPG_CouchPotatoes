@@ -7,21 +7,19 @@
 
 public class Protagonist extends Character{
 
-    //attributes for our character
-    private String name;
-    private int health;
-    private int strength;
-    private int defense;
-    private double attRating;
-
-    public Protagonist(String charName){
-	name = charName;
+    private String _name = "YouForgotYourself";
+    
+    public Protagonist(){
 	health = 125;
 	strength = 100;
 	defense = 40;
 	attRating = 0.4;
 
-    }//ends constructor
+    }//ends constructor1
+    public Protagonist( String charName ) {
+	this();
+	name = charName;
+    }
 
     public boolean isAlive(){
 	return (health > 0);//If health is zero, character is dead

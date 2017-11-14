@@ -1,4 +1,11 @@
+/*
+  Bo Hui Lu, Larry Wong, Richard Wong (Team CouchPotatoes)
+  APCS1 pd08
+  HW28 -- Ye Olde Role Playing Games
+  2017-11-09
+*/
 public class Character {
+    protected String name;
     protected int health;
     protected int strength;
     protected int defense;

@@ -18,6 +18,7 @@ public class YoRPG
     //each round, a Protagonist and a Monster will be instantiated...
     private Protagonist pat;   //Is it man or woman?
     private Monster smaug; //Friendly generic monster name?
+    private int subclass;//selects class for protagonist
 
     private int moveCount;
     private boolean gameOver;
@@ -73,9 +74,30 @@ public class YoRPG
 	    name = in.readLine();
 	}
 	catch ( IOException e ) { }
+	
 
+	s = "~~~ Choose thy career ~~~\n";
+
+	s += "\t1: Warrior\n";
+	s += "\t2: <insert>\n";
+	s += "\t3: <insert>\n";
+	s += "Selection: ";
+	System.out.print( s );
+    
+	try {
+	    subclass = Integer.parseInt( in.readLine() );
+	}
+	catch ( IOException e ) { }
+    
 	//instantiate the player's character
-	pat = new Protagonist( name );
+	if (subclass == 1){
+	    pat = new Warrior(name);
+	}else if (subclass == 2){
+	    pat = new Warrior(name);
+	}else{
+	    pat = new Warrior(name);
+	}
+    
 
     }//end newGame()
 
@@ -90,6 +112,7 @@ public class YoRPG
     {
 	int i = 1;
 	int d1, d2;
+	System.out.println(pat.getDefense());
 
 	if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
