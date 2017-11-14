@@ -7,7 +7,8 @@
 
 public class Wizard extends Protagonist{
 
-    public Wizard(){
+    public Wizard(String name){
+	name = charName;
 	health = 125;
 	strength = 100;
 	defense = 40;
