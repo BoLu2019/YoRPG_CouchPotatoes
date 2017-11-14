@@ -79,8 +79,8 @@ public class YoRPG
 	s = "~~~ Choose thy career ~~~\n";
 
 	s += "\t1: Warrior\n";
-	s += "\t2: <insert>\n";
-	s += "\t3: <insert>\n";
+	s += "\t2: Wizard\n";
+	s += "\t3: Archer\n";
 	s += "Selection: ";
 	System.out.print( s );
     
@@ -93,9 +93,9 @@ public class YoRPG
 	if (subclass == 1){
 	    pat = new Warrior(name);
 	}else if (subclass == 2){
-	    pat = new Warrior(name);
+	    pat = new Wizard(name);
 	}else{
-	    pat = new Warrior(name);
+	    pat = new Archer(name);
 	}
     
 
