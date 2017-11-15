@@ -18,10 +18,22 @@ public class Wizard extends Protagonist{
     }//ends constructor
 
     //about this class
-    public static String about(){
+    public String about(){
 	return "This subclass Wizard is a Protagonist with exceptionally high magical abilities, hence increasing attRating by 2x. Does HUGEEEE damage, so watch out.";
+    }
+	
+    //prepares for special attack. Lowered defense for a 100% boost in attack
+    public void specialize(){
+	defense -= 10;
+	attRating *= 2.0;     
+    }
 
-    }//end about()
+    //resets attRating and defense to normal
+    public void normalize(){
+	defense = 40;
+	attRating = 0.8	;
+    }
+
 
     
 
