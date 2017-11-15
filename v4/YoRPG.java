@@ -97,6 +97,8 @@ public class YoRPG
 	}else{
 	    pat = new Archer(name);
 	}
+
+	System.out.println(pat.about());
     
 
     }//end newGame()

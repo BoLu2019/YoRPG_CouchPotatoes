@@ -45,7 +45,7 @@ public abstract class Protagonist extends Character{
     public abstract void normalize();
 
     
-
+    //returns description of subclass
     public abstract String about();
 
-    
+}    

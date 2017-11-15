@@ -18,10 +18,22 @@ public class Warrior extends Protagonist{
 
 
     //about this class
-    public static String about(){
+    public String about(){
 	return "This subclass of Protagonist that gives the user a high helth pool and defense.However, in return, the class's attack damage is lower than other classes. This class is great for long runs and is generally for less experienced players.";
 
     }//end about()
+
+    //prepares for special attack. Lowered defense for a 100% boost in attack
+    public void specialize(){
+	defense -= 10;
+	attRating *= 1.1;     
+    }
+
+    //resets attRating and defense to normal
+    public void normalize(){
+	defense = 70;
+	attRating = 0.2	;
+    }
 
     
 
