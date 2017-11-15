@@ -17,10 +17,23 @@ public class Archer extends Protagonist{
     }//ends constructor
 
     //about this class
-    public static String about(){
+    public String about(){
 	return "This subclass of Protagonist, Archer, is one with slightly above average attack and defense, good for balanced gameplay.";
 
     }//end about()
+
+    //prepares for special attack. Lowered defense for a 100% boost in attack
+    public void specialize(){
+	defense -= 20;
+	attRating *= 1.4;     
+    }
+
+    //resets attRating and defense to normal
+    public void normalize(){
+	defense = 55;
+	attRating = 0.4	;
+    }
+
 
     
 
