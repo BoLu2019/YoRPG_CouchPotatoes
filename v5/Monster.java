@@ -7,8 +7,8 @@ public class Monster extends Character{
 
     //initalizes all values
     public Monster(){
-	health = 150;
-	strength = (int)(Math.random()*45) + 20;
+	health = 300;
+	strength = (int)(Math.random()*45) + 50;
 	defense = 20;
 	attRating = 1;
 

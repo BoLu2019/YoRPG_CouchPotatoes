@@ -98,7 +98,7 @@ public class YoRPG
 	    pat = new Archer(name);
 	}
 
-	System.out.println(pat.about());
+	System.out.println("\n" + pat.about());
     
 
     }//end newGame()
@@ -113,7 +113,7 @@ public class YoRPG
     public boolean playTurn()
     {
 	int i = 1;
-	int d1, d2;
+	int d1, d2, def = 5;
 	System.out.println(pat.getDefense());
 
 	if ( Math.random() >= ( difficulty / 3.0 ) )
@@ -130,24 +130,46 @@ public class YoRPG
 		// ...but if you get hit, you take more damage.
 		try {
 		    System.out.println( "\nDo you feel lucky?" );
-		    System.out.println( "\t1: Nay.\n\t2: Aye!" );
+		    System.out.println( "\t1: Nay.\n\t2: Aye!\n\t3: Maybe..." );
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
 
-		if ( i == 2 )
+		System.out.println("\nTime for the regular checkup:");
+		pat.checkStats();
+		
+		if ( i == 2 ){
 		    pat.specialize();
-		else
+		    d1 = pat.attack( smaug );
+		    d2 = smaug.attack( pat );
+		    System.out.println( "\n" + pat.getName() + " dealt " + d1 +
+					" points of damage.");
+		    System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
+					" for " + d2 + " points of damage.");
+		}else if (i == 3){
+		    d1 = pat.attack( smaug );
+		    d2 = smaug.attack( pat );
+		    System.out.println( "\n" + pat.getName() + " dealt " + d1 +
+					" points of damage.");
+		    System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
+					" for " + d2 + " points of damage.");
 		    pat.normalize();
+				    
+		}else{
+		    pat.defend();
+		    d2 = smaug.attack( pat );
+		    System.out.println("You brace yourself.");
+		    System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
+					" for " + d2 + " points of damage.");
+		    System.out.println("\nYou loose your focus.");
+		    
+		}
+		
+		System.out.println("\nTime for the regular checkup:");
+		pat.checkStats();
+		    
 
-		d1 = pat.attack( smaug );
-		d2 = smaug.attack( pat );
 
-		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
-				    " points of damage.");
-
-		System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
-				    " for " + d2 + " points of damage.");
 	    }//end while
 
 	    //option 1: you & the monster perish

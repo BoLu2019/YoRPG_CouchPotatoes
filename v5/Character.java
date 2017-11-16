@@ -10,6 +10,7 @@ public class Character {
     protected int strength;
     protected int defense;
     protected double attRating;
+    protected int counterDef;
     
     public boolean isAlive(){
 	return (health > 0);//If health is zero, character is dead

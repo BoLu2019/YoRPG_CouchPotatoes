@@ -14,6 +14,7 @@ public abstract class Protagonist extends Character{
 	strength = 100;
 	defense = 40;
 	attRating = 0.4;
+	counterDef = 0;
 
     }//ends constructor
 
@@ -27,7 +28,7 @@ public abstract class Protagonist extends Character{
     //returns damage thats going to be dealt
     public int attack(Monster x){
 	int damage = 0;
-	damage += (strength* attRating); //before defense is applied
+	damage += (int)((Math.random() + 1)*(strength * attRating)); //before defense is applied
 	damage -= x.getDefense(); //takes into account the defense
 	if(damage < 0){
 	    return 0;
@@ -36,9 +37,23 @@ public abstract class Protagonist extends Character{
 	return damage;
     }
 
+    //returns the stats of the character
+    public void checkStats(){
+	System.out.println("\tHealth: " + health );
+	System.out.println("\tStrength: " + strength);
+	System.out.println("\tAttack Rating: " + attRating);
+	System.out.println("\tDefense: " + defense);
+    }
+
+    //recover health
+    public abstract void recover();
+    
+    //defends against the next attack
+    public abstract void defend();
+
+    
     //prepares for special attack. Lowered defense for a 100% boost in attack
     public abstract void specialize();
-    
     
 
     //resets attRating and defense to normal
