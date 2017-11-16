@@ -120,8 +120,11 @@ public class YoRPG
 	    System.out.println( "\nNothing to see here. Move along!" );
 	else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
+	    
+            Monster[] monsterList = {new Gargoyle(), new Goblin(), new Slime()};
+            int randomChoice = (int) Math.random() * 3;
 
-	    smaug = new Monster();
+	    smaug = monsterList[randomChoice];
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
