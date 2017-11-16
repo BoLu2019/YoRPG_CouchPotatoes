@@ -17,8 +17,8 @@
    
 # New Additions in Version 5.0:
    # 1. Before and after every turn, the player's stats will be visible on the screen.
-   # 2. A new action is added to the game: defending. Defending will increase the player's defense by a certain amount (this amount is a random fraction of the current defense added to the current defense), but the player's strength will also be decreased from the recoil (this value is determined by the multiplication of a random decimal and the current strength).
-   # 3. Defending 3 times will result in a minor heal as the player recollects his/her thoughts (amt healed is a random fraction of the player's current health).
+   # 2. A new action is added to the game: defending. Defending will increase the player's defense by a certain amount (This amount is a random fraction of the current defense added to the current defense. Will be capped at 80 for balance.), but the player's strength will also be decreased from the recoil (this value is determined by the multiplication of a random decimal and the current strength).
+   # 3. Defending 2 times will result in a minor heal as the player recollects his/her thoughts (amount healed is a random fraction of the player's current health).
    # 4. Player's and Monster's stats have been modified to provide a more balanced(or unbalanced) gameplay.
       
 # YoRPG
