@@ -1,5 +1,5 @@
 # YoRPG_CouchPotatoes
-#Bo Hui Lu, Larry Wong, Richard Wong
+## Bo Hui Lu, Larry Wong, Richard Wong
 
 ## Characters
 # These three characters are all subclasses of Character.
