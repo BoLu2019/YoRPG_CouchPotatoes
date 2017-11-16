@@ -13,6 +13,7 @@ public class Warrior extends Protagonist{
 	strength = 70;
 	defense = 50;
 	attRating = 0.7;
+	counterDef = 0;
 
     }//ends constructor
 
@@ -26,22 +27,24 @@ public class Warrior extends Protagonist{
     //defend against attack by increasing defense
     public void defend(){
 	defense += (int)(Math.random() * defense);
-	strength = (int)(Math.random() * strength);
+	strength -= 3;
+	if (defense > 70) {
+	    defense = 70;
+	}	
 	counterDef += 1;
-	if (counterDef == 3){
+	if (counterDef == 2){
 	    counterDef = 0;
 	    recover();
 	}
-	System.out.println("You qucikly put up a shield.");
+	System.out.println("You quickly put up a shield.");
     }
 
-    //recover health by defending 3 times
+    //recover health by defending 2 times
     public void recover(){
-	int hp = (int)((Math.random() * health)*.5);
-	if (health + hp > 200){
-	    hp = 200 - health;
-	    health += hp;
-	}
+	int hp = (int)((Math.random() * health)*.5 + 5);
+
+	health += hp;
+		
 	System.out.print("You catch your breath and pick yourself up. Recover : ");
 	System.out.print(hp);
 	System.out.println(" health.\n");       
@@ -50,7 +53,10 @@ public class Warrior extends Protagonist{
     //prepares for special attack. Lowered defense for a 100% boost in attack
     public void specialize(){
 	defense *= .7;
-	attRating *= 1.1;     
+	attRating *= 1.1;
+	if ( attRating > 2.0){
+	    attRating = 2.0;
+	}
     }
 
     //resets attRating and defense to normal

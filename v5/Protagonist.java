@@ -28,8 +28,8 @@ public abstract class Protagonist extends Character{
     //returns damage thats going to be dealt
     public int attack(Monster x){
 	int damage = 0;
-	damage += (int)((Math.random() + 1)*(strength * attRating)); //before defense is applied
-	damage -= x.getDefense(); //takes into account the defense
+	damage += (int)((Math.random() + 0.5)*(strength * attRating)); //before defense is applied
+	damage -= x.getDefense() / 2; //takes into account the defense
 	if(damage < 0){
 	    return 0;
 	}
@@ -39,6 +39,7 @@ public abstract class Protagonist extends Character{
 
     //returns the stats of the character
     public void checkStats(){
+	System.out.println("\tName : " + getName());
 	System.out.println("\tHealth: " + health );
 	System.out.println("\tStrength: " + strength);
 	System.out.println("\tAttack Rating: " + attRating);
